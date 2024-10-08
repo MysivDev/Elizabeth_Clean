@@ -1,0 +1,21 @@
+<nav class="navbar navbar-expand-lg bg-body-tertiary navbar_smaller">
+  <div class="container-fluid">
+    <img class="Logo_Phone" src="{{ 'Lopas_Logo.png' |  asset_url }}" alt="Lopas_Logo">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse center_nav" id="navbarNavAltMarkup">
+      <div class="navbar-nav center_items">
+        {% for link in linklists['main-menu'].links %}
+          {% if link.title != 'Kontakt' %}
+            <a class="nav-link active lopas_link" aria-current="page" href="{{ link.url }}">{{ link.title | upcase }}</a>
+          {% else %}
+          <a href="{{ link.url }}">
+            <img id="Logo" src="{{ 'Lopas_Logo.png' |  asset_url }}" alt="Lopas_Logo">
+          </a>
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</nav>
