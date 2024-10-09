@@ -1,0 +1,46 @@
+<main class="welcome">
+    <h1>WELCOME</h1>
+    <p>
+        <strong>Herzlich willkommen</strong> auf unserer Seite! Wir sind <strong>Jonas und Leonard</strong>, zwei
+        Barkeeper aus der charmanten Stadt Krefeld, mit
+        einem Traum: Eines Tages unsere eigene Bar zu eröffnen. Bis es soweit ist, möchten wir eine lebendige Community
+        aufbauen
+        und uns als Marke "LOPAS" einen Namen machen.
+    </p>
+    <p>
+        Unsere Cocktailkurse bieten den perfekten Rahmen für Gruppen oder Paare,
+        die eine besondere Zeit miteinander verbringen und dabei die Kunst der Cocktailzubereitung entdecken möchten. Ob
+        ihr
+        einen entspannten Abend mit Freunden plant oder einen romantischen Pärchenabend genießen wollt – bei uns seid
+        ihr genau
+        richtig.
+    </p>
+    <p>
+        <strong>
+            Unsere Kurse eignen sich auch hervorragend für besondere Anlässe wie Junggesellinnenabschiede, Geburtstage
+            oder Firmen-Events. Kommt vorbei, mixt mit uns köstliche Cocktails und lasst uns zusammen unvergessliche
+            Momente
+            erleben!
+        </strong>
+    </p>
+    <div class="imgCenter">
+        <img src="{{ section.settings.img | image_url }}" alt="WeAreLopas">
+    </div>
+</main>
+
+{% schema %}
+{
+    "name": "Welcome Section",
+    "settings": [
+        {
+            "type": "image_picker",
+            "id": "img",
+            "label": "Focus-Image"
+        }
+    ],
+    "presets": [{"name": "Welcome Section" }],
+    "tag": "section",
+    "class": "welcome_Section",
+    "limit": 1
+}
+{% endschema %}

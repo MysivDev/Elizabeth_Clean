@@ -3,11 +3,25 @@ body {
 }
 
 video {
-    height: 30rem;
+    height: 40rem;
     min-width: 100%;
     overflow: hidden;
     object-fit: cover;
     width: 100%;
+}
+
+#shopify-section-header {
+    height: 100%;
+}
+
+.dp-none {
+    display: none;
+}
+
+.white-bg {
+    height: 100%;
+    z-index: 2;
+    background-color: white;
 }
 
 #Logo {
@@ -34,8 +48,12 @@ video {
 }
 
 .navbar_smaller {
-    height: 12.5rem;
-    box-shadow: -2px 0px 10px rgb(24, 24, 24);
+    z-index: 3;
+    height: 125%;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    box-shadow: 0 8px 2px -2px rgba(29, 29, 29, 0.859);
 }
 
 .center_nav {
@@ -55,10 +73,14 @@ video {
     width: 25%;
 }
 
+.product_Section {
+    height: 40rem;
+}
+
 .video_cover {
     position: relative;
-    bottom: 485px;
-    height: 30rem;
+    bottom: 645px;
+    height: 40rem;
     width: 100%;
     z-index: 1;
     background-color: rgba(0, 0, 0, 0.50);
@@ -119,7 +141,6 @@ video {
 
 .focusImg1 {
     opacity: 100%;
-    box-shadow: -4px 2px 10px peachpuff;
     -webkit-animation-name: sizeUp;
     animation-name: sizeUp;
     -webkit-animation-duration: 0.25s;
@@ -138,7 +159,6 @@ video {
     animation-fill-mode: both;
     animation-timing-function: linear;
     opacity: 100%;
-    box-shadow: -4px 2px 10px rgb(197, 89, 0);
 }
 
 .focusImg3 {
@@ -150,7 +170,6 @@ video {
     animation-fill-mode: both;
     animation-timing-function: linear;
     opacity: 100%;
-    box-shadow: -4px 2px 10px rgb(90, 66, 46);
 }
 
 @-webkit-keyframes sizeUp {
@@ -162,35 +181,113 @@ video {
     40%,
     60%,
     80%,
-    90%,
-    99% {}
+    100% {}
 
     20% {
-        height: 11.5rem;
-    }
-
-    40% {
         height: 13rem;
     }
 
-    60% {
-        height: 14.5rem;
-    }
-
-    80% {
+    40% {
         height: 16rem;
     }
 
+    60% {
+        height: 19rem;
+    }
+
+    80% {
+        height: 22rem;
+    }
+
     100% {
-        height: 17.5rem;
+        height: 25rem;
     }
 }
 
-@media (max-width: 988px) {
+.welcome {
+    margin: 4rem;
+}
+
+.welcome h1 {
+    font-size: 3.5rem;
+    font-family: 'Irish Grover';
+    letter-spacing: 2.5px;
+    width: 19rem;
+    color: white;
+    background-color: #054F82;
+    padding: 0 1rem;
+    margin: 3rem 0;
+}
+
+.welcome p {
+    color: #054F82;
+    font-size: 1.5rem;
+}
+
+.imgCenter {
+    height: 60rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcome img {
+    height: 40rem;
+}
+
+.news_footer {
+    height: 30rem;
+    width: 100%;
+    background-color: #054F82;
+    padding: 4rem;
+}
+
+.news_heading {
+    font-size: 3rem;
+    font-family: 'Irish Grover';
+    letter-spacing: 1.5px;
+    color: white;
+}
+
+.news--bar {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.news--bar a {
+    color: white;
+    text-decoration: none;
+}
+
+.news--bar a p {
+    font-weight: lighter;
+}
+
+
+
+@media (max-width: 990px) {
     .Logo_Phone {
         height: 12.5rem;
         display: inline-block;
         position: relative;
         top: 0.5rem;
+    }
+
+    .Courses {
+        display: none;
+    }
+
+    .product_Img {
+        height: 25rem;
+        margin: 4rem 0;
+        opacity: 100%;
+    }
+}
+
+@media (min-width: 990px) {
+    .carousel .slide {
+        display: none;
     }
 }

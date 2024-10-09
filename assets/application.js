@@ -60,5 +60,8 @@ function CourseOnFocus(HoverOutput){
                 document.getElementsByClassName("product_price 3")[0].style["display"] = "inline-block";
         }
     }
+    if(drinkFocus.length > 2){
+      drinkFocus.shift();
+    }
     console.log(drinkFocus);
 }

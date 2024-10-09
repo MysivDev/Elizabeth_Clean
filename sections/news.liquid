@@ -1,0 +1,16 @@
+<footer class="news_footer">
+    <div class="news">
+        <h1 class="news_heading">NEWS</h1>
+        <div class="news--bar">
+            {% for blog in blogs['news'].articles %}
+                <a href="{{ blog.url }}">
+                    <h3>{{ blog.title }}</h3>
+                    <p>by Lopas</p>
+                </a>
+            {% endfor %}
+        </div>
+    </div>
+    <div class="footer">
+    
+    </div>
+</footer>
